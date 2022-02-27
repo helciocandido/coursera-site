@@ -1,2 +1,2 @@
-# coursera-site.github.io
+# coursera-site
 Coursera site repository
