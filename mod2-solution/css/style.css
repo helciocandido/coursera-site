@@ -1,0 +1,105 @@
+/* ***** Base Styles ***** */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.875rem;
+  margin: 0px 20px;
+}
+
+h1,
+h2,
+p {
+  margin: 0px;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+.row {
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.item {
+  position: relative;
+  float: left;
+}
+
+.item h2 {
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 5px 10px;
+  width: 150px;
+  text-align: center;
+  top: 20px;
+  right: 20px;
+}
+
+.item:first-child h2 {
+  background-color: #d19998;
+}
+
+.item:nth-child(2) h2 {
+  background-color: #bb4844;
+  color: #ffffff;
+}
+
+.item:last-child h2 {
+  background-color: #e2d499;
+}
+
+.item p {
+  font-size: 1.25rem;
+  background: #ccc;
+  margin: 20px;
+  padding: 60px 30px 30px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.item:first-child p {
+  background-color: #805f5e;
+  color: #ffeaea;
+}
+
+.item:nth-child(2) p {
+  background-color: #833531;
+  color: #ffebea;
+}
+
+.item:last-child p {
+  background-color: #777452;
+  color: #fcffe9;
+}
+
+/* ***** Desktop devices only ***** */
+@media (min-width: 992px) {
+  .item {
+    width: 33.33%;
+  }
+}
+
+/* ***** Tablet devices only ***** */
+@media (min-width: 768px) and (max-width: 991px) {
+  .item {
+    width: 50%;
+  }
+  .item:last-child {
+    width: 100%;
+  }
+}
+/* ***** Mobile devices only ***** */
+@media (max-width: 767px) {
+  .item {
+    width: 100%;
+  }
+}
